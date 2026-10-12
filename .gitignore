@@ -1,0 +1,36 @@
+# ---------- 密钥（绝对不能提交！） ----------
+.env
+.env.local
+*.key
+*.pem
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---------- 工具缓存 ----------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---------- 生成物 ----------
+*.jsonl
+llm_calls.jsonl
+index.json
+web_index.json
+*.joblib
+uploads/
+output/
+cost_report.png
+chart.png
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

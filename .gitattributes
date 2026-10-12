@@ -1,0 +1,23 @@
+# 统一换行符为 LF，避免 Windows / macOS 协作时整文件 diff
+* text=auto eol=lf
+
+# 明确类型，让 GitHub 正确识别语言统计和 diff
+*.py    text diff=python
+*.md    text diff=markdown
+*.txt   text
+*.ps1   text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# 二进制文件不要尝试做换行转换
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.pdf   binary
+*.xlsx  binary
+*.joblib binary
+
+# 合并冲突时以我们的为准（教程类仓库够用）
+README.md merge=union
+CHANGELOG.md merge=union
